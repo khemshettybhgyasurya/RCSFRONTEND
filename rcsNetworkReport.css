@@ -1,0 +1,83 @@
+.govtInfo {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .ReportName {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  table.sample {
+    border: solid 1px;
+    padding: 6px;
+    border-style: solid;
+    border-color: black;
+    border-collapse: collapse;
+  }
+  
+  table.sample th {
+    border: solid 1px;
+    padding: 6px;
+    border-style: solid;
+    border-color: #6447ce;
+    background: #dfd6ff;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: verdana;
+  }
+  
+  table.sample td {
+    border: solid 1px;
+    padding: 6px;
+    border-style: solid;
+    border-color: #6447ce;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: verdana;
+  }
+  
+  .headingreport {
+    color: #ffffff;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: #24039b;
+    padding: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between; /* Ensures equal space between buttons */
+    margin-top: 20px;
+    width: 90px; /* Width of the button container */
+    margin-left: auto; /* Center the container */
+    margin-right: auto; /* Center the container */
+  }
+  
+  .actionButton {
+    background-color: #6447ce;
+    color: white;
+    padding: 5px 10px; /* Smaller padding for smaller buttons */
+    margin: 0 5px; /* Less margin between buttons */
+    border: none;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 12px; /* Smaller font size */
+    transition: background-color 0.3s ease;
+  }
+  
+  .actionButton:hover {
+    background-color: #5631bf;
+  }

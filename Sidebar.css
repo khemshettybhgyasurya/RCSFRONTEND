@@ -1,0 +1,51 @@
+/* Sidebar styling */
+.sidebar {
+ 
+  height: 100vh;
+  background-color: #0c0036;
+  color: #fff;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(65, 112, 182, 0.1);
+  z-index: 1;
+  overflow-y: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateX(0); /* Start with the sidebar visible */
+  opacity: 1; /* Start with the sidebar visible */
+}
+
+/* Hide sidebar by moving it off-screen and making it transparent */
+.sidebar.hidden {
+  transform: translateX(-170px); /* Move the sidebar left by its width */
+  opacity: 0; /* Make the sidebar transparent */
+}
+
+/* Styling for the toggle button */
+.toggle-sidebar-btn {
+  position: fixed; /* Fix it to the viewport */
+  top: 4px;
+    left: 165px;
+  z-index: 2; /* Ensure it's above the sidebar */
+  padding: 10px 20px; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.toggle-sidebar-btn:hover {
+ color: #ffffff; /* Change as needed */
+}
+ul > li
+{
+    list-style-type: none;
+}
+.li-ch{color:#fff; background-color: #07408b; padding: 7px 12px; margin: 2px !important;}
+a{color: #fff;}
+.masters-icon {
+  width: 20px; /* Adjust size as needed */
+  height: 20px;
+}

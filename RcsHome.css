@@ -1,0 +1,202 @@
+.header {
+  width: calc(100% - 0px);
+  padding: 5px; /* Reduced padding to make the header shorter */
+  background-color: #1d0087;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 1px;
+  right: 1px; /* Adjusted to fit within the header */
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header-content {
+  flex: 5;
+  display: flex;
+  justify-content: left; /* Center the title */
+}
+
+.header h1 {
+  margin: 0; /* Reset margin to control the height */
+  font-size: 1.2rem; /* Adjust font size to reduce header height */
+  text-align: center; /* Center align the text */
+  line-height: 1.2; /* Reduce line-height to make header shorter */
+}
+
+.logout-icon {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  cursor: pointer;
+  margin-right: 10px; /* Adjust spacing from the right edge */
+}
+
+.right-image {
+  width: 40px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 10px; /* Adjust spacing from the left edge */
+}
+
+.footer {
+  width: calc(100% - 2px); /* Adjust width to match header */
+  padding: 3px;
+  background-color: #1b0862;
+  color: #fff;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  left: 1px;
+  right: 1px; /* Adjust positioning to match header */
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+ 
+.form-group {
+  margin-bottom: 15px;
+  width: 70%;
+  padding: 4px 10px; /* Padding for internal spacing */
+  margin-right: 10px; /* Space to the right of the form group */
+}
+
+/* Style for text boxes */
+.form-group input[type="text"] {
+  width: 100%; /* Make the text box take the full width of the form-group */
+  padding: 8px 10px; /* Adjust padding to match the form-group */
+  border: 1px solid #ccc; /* Border styling for the text box */
+  border-radius: 4px; /* Optional: rounded corners for the text box */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.blue-link {
+  color: blue;
+  text-decoration: underline;
+}
+
+.blue-link h4 {
+  margin: 0; /* Removes default margin if needed */
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.info-icon {
+  margin-left: 0.5rem;
+  color: #007bff; /* Customize the color as needed */
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.info-icon:hover {
+  color: #0056b3; /* Customize the hover color as needed */
+}
+
+
+
+/* Header and Footer styles remain unchanged */
+
+.input-container {
+  position: relative; /* Required for positioning the tooltip */
+  display: flex;
+  align-items: center;
+}
+
+.info-icon {
+  margin-left: 0.5rem;
+  color: #007bff; /* Icon color */
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.info-icon:hover {
+  color: #0056b3; /* Hover color */
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%; /* Position tooltip below the input */
+  left: 0;
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+  z-index: 10; /* Ensure the tooltip is on top */
+}
+
+.input-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltiptext {
+  font-size: 12px;
+}
+
+.fas {
+  font-size: 18px; /* Adjust size as needed */
+  color: #007bff; /* Adjust color as needed */
+  cursor: pointer; /* Make it clear that it is clickable */
+}
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
